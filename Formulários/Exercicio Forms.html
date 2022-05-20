@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro da Liga dos Astronautas</title>
+</head>
+<body>
+    <h3>Cadastro da Liga dos Astronautas</h3>
+    <form>
+        <div>
+        <label for="name">Nome: </label>
+        <input type="text" name="name" id="name" required>
+        <label for="phone">Celular: </label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-5678" pattern="[0-9]{4}-[0-9]{4}" required>
+        <div>
+        <br>
+        <div>
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" required>
+        <label for="password">- Senha: </label>
+        <input type="password" name="password" id="password" required><br>
+        </div>
+        <div>
+            <p>Data de Nascimento: <input type="date" name="data" required> - Foto: <input type="file" name="Foto" required></p>
+            <label for="nacionalidade">Nacionalidade </label>
+            <select name="nacionalidade" id="nacionalidade" required>
+                <option value="Brasileiro">Brasileiro</option>
+                <option value="Russo">Russo</option>
+                <option value="Japonês">Japonês</option>
+                <option value="Alemão">Alemão</option>
+                <option value="Francês">Francês</option>
+                <option value="Hungaro">Hungaro</option>
+                <option value="Holândes">Holândes</option>
+                <option value="Argentino">Argentino</option>
+            </select>
+            <label for="gender">- Gênero</label>
+            <input type="radio" name="gender" id="gender" value="male" required>
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" id="gender" value="female" required>
+            <label for="female">Feminino</label>
+        </div>
+        <br>
+        <label for="qualidades">Suas principais qualidades: </label> 
+        <label for="inteligencia">Inteligência</label>
+        <input type="checkbox" name="qualidades" id="qualidades" value="inteligencia">
+        <label for="resiliencia">| Resiliência</label>
+        <input type="checkbox" name="qualidades" id="qualidades" value="resiliencia">
+        <label for="preparo_fisico">| Preparo físico</label>
+        <input type="checkbox" name="qualidades" id="qualidades" value="preparo_fisico">
+        <label for="educacao">| Educação </label>
+        <input type="checkbox" name="qualidades" id="qualidades" value="educacao">|
+        <br>
+        <br>
+        <textarea name="descricao" rows="10" cols="29">Por quê você gostaria de ser um membro da Liga dos Astronautas</textarea>
+        <br>
+        <br>
+        <input type="submit" value="Enviar Cadastro">
+    </form>
+</body>
+</html>
